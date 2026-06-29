@@ -1,0 +1,6 @@
+{
+  "name": "SI Akademik",
+  "description": "Aplikasi akademik mahasiswa dengan mode tampilan Grid, List, dan Card menggunakan RecyclerView.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
