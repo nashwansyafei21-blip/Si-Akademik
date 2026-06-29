@@ -23,11 +23,10 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         }
 
         binding.btnPortalAdmin.setOnClickListener {
-            Toast.makeText(
-                requireContext(),
-                "Portal Admin hanya dapat diakses oleh Staff Akademik.",
-                Toast.LENGTH_LONG
-            ).show()
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, AdminFragment())
+                .addToBackStack(null)
+                .commit()
         }
     }
 
